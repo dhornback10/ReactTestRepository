@@ -1,0 +1,37 @@
+#backgroundMap {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url(./middle-earth-map.jpg) center no-repeat;
+} 
+
+i {
+  color: goldenrod;
+  background-color: #000;
+  border-radius: 25px;
+  font-size: 30px;
+}
+
+.locationStar {
+  width: 30px;
+  position: relative;
+  top: 92px;
+  left:670px;
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .spin {
+    animation: Spin infinite 5s linear;
+  }
+}
+
+
+@keyframes Spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
